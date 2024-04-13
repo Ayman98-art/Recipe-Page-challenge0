@@ -1,0 +1,184 @@
+:root{
+    /*Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+    --bg_Body : #f3e5d8;
+    --text_Body : #000000;
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+    
+    /* Typography */
+    --Font_size_Default : 16px;
+    
+    /* Fonts */
+    --Font_Outfit : "Outfit", sans-serif;
+    --Font_Young : "Young Serif", serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/* 
+    font-family: "Outfit", sans-serif;
+    Weights: 400
+
+    font-family: "Young Serif", serif;
+    Weights: 400, 600, 700
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--Font_size_Default);
+    font-family: var(--Font_Young);
+    background-color: var(--bg_Body);
+    color: var(--text_Body);
+}
+
+main{
+    background-color: var(--White);
+    border-radius: 25px;
+    padding: 30px;
+    width: 85%;
+    margin: 60px auto;
+}
+
+main section{
+    padding: 20px;
+}
+
+.sec-00 img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.sec-01 h1,
+.sec-02 h4,
+.sec-03 h2,
+.sec-04 h2,
+.sec-05 h2{
+    font-family: var(--Font_Outfit);
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 18px;
+}
+
+.sec-01 p,
+.sec-05 p{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--Wenge_Brown);
+    width: 70%;
+    margin-right: auto;
+}
+
+.sec-02{
+    background-color: var(--Rose_White);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.sec-02 h4{
+    font-size: 34px !important;
+}
+
+.sec-02 ul,
+.sec-03 ul,
+.sec-04 ol{
+    padding-left: 35px;
+}
+
+.sec-02 ul li,
+.sec-03 ul li,
+.sec-04 ol li,
+.sec-05 table tr td{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--Wenge_Brown);
+}
+
+.sec-02 ul li span,
+.sec-04 ol li span,
+.sec-05 table tr td span{
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.sec-03 h2{
+    font-size: 42px;
+}
+
+hr{
+    width: 95%;
+    height: 1px;
+    margin: 15px auto;
+    background-color: var(--Wenge_Brown);
+}
+
+.sec-04 h2,
+.sec-05 h2,
+.sec-05 table tr td span{
+    color: var(--Nutmeg);
+}
+
+.sec-05 table{
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.sec-05 table tr td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.border::after{
+    content: '';
+    position: absolute;
+    width: 98%;
+    margin: auto;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 73px;
+    background-color: var();
+    background-color: var(--Wenge_Brown);
+}
+
+.border01::after{
+    top: 124px;
+}
+
+.border02::after{
+    top: 185px;
+}
+
+.sec-06{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sec-06 a{
+    padding: 0px 5px;
+    text-decoration: none;
+    color: var(--Nutmeg);
+}
